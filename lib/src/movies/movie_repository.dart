@@ -21,6 +21,7 @@ class MovieRepository {
           (json) => MovieModel(
             title: json['title'],
             urlImage: 'https://image.tmdb.org/t/p/w185${json['poster_path']}',
+            overview: json ['overview']
           ),
         ),
       );
